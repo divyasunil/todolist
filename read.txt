@@ -1,0 +1,16 @@
+folder Name: todolist
+
+pip install virtualenvwrapper-win
+mkvirtualenv todo
+pip install django
+
+mkdir todoproject
+cd todoproject
+django-admin startproject
+django-admin startproject todoproject
+cd todoproject
+python manage.py startapp todoapp
+python manage.py runserver
+
+ py manage.py makemigrations
+ py manage.py migrate
