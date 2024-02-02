@@ -38,8 +38,13 @@
                 <h5 class="card-title">{{i.name}}</h5>
                 <p class="card-text">{{i.priority}}</p>
                 <p class="card-text">{{i.date}}</p>
+
+                <a class="btn btn-success" href="{% url 'todoapp:vdetail' i.id %}">Details</a>
+
                 <a class="btn btn-success" href="{% url 'todoapp:update' i.id %}">Update</a>
                 <a class="btn btn-danger" href="{% url 'todoapp:delete' i.id %}">Done</a>
+<!--                <a class="btn btn-success" href="{% url 'todoapp:vupdate' i.id %}">Update</a>-->
+<!--                <a class="btn btn-danger" href="{% url 'todoapp:vdelete' i.id %}">Done</a>-->
               </div>
             </div>
             <br/>

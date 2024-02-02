@@ -4,6 +4,8 @@
 <form method="POST">
     {% csrf_token %}
     <p>Are you sure this task is done?</p>
-    <input type="submit">
+    <button type="submit">Confirm</button>
+<!--    <input type="submit">-->
+    <a class="link-primary" href="{% url 'todoapp:vhome' %}">Back to Home</a>
 </form>
 {% endblock %}
