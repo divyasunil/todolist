@@ -23,7 +23,43 @@ divyasunil
 divyaR@13
 
 
-sql
+bash:
+pwd
+mkvirtualenv test --python=/usr/bin/python3.6
+git clone https://github.com/divyasunil/todolist
+ls
+# move inside the folder where manage.py present
+cd todoproject
+
+pip install django
+pip install mysql-connector-python
+pip install pillow
+pip install mysqlclient
+
+
+create web app
+manal config
+python3.6
+
+edit WSGI configuration file:/var/www/divyasunil_pythonanywhere_com_wsgi.py
+keep only DJANGO code
+
+update 'path' with manage.py file
+get using pwd in bash
+path = '/home/divyarohith/todoproject'
+get  folder of settings.py file
+os.environ['DJANGO_SETTINGS_MODULE'] = 'todoproject.settings'
+save the file
+
+edit settings.py
+ALLOWED_HOSTS = ['*']
+
+Create Database
+ set password : divyaCG@12345
+ set database name : tododatabase
+
+siles-> settings.py->
+sql setting 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -34,3 +70,22 @@ DATABASES = {
         'PORT': '3306',
     }
 }
+
+set virtual env in webapp page
+/home/divyasunil/.virtualenvs/test
+
+
+set static file path
+/home/divyasunil/todoproject/static
+URL	: /static/
+Directory: /home/divyasunil/todoproject/static
+
+migations
+goto todoapp->migrations
+delete all files except __init__.py
+
+in bash console
+ python manage.py makemigrations
+ python manage.py migrate
+
+
