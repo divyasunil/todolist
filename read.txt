@@ -14,3 +14,23 @@ python manage.py runserver
 
  py manage.py makemigrations
  py manage.py migrate
+
+
+pythonanywhere
+http://divyasunil.pythonanywhere.com/
+
+divyasunil
+divyaR@13
+
+
+sql
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'divyasunil$tododatabase',
+        'USER': 'divyasunil',
+        'PASSWORD': 'divyaCG@12345',
+        'HOST': 'divyasunil.mysql.pythonanywhere-services.com',
+        'PORT': '3306',
+    }
+}
